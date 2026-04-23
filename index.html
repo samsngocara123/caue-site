@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Eli - Arte do Artesanato</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: url('fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #7d2c2c;
+    background-image: url("img.fundo.png");
+    background-repeat: no-repeat;
+}
+
+/* ANIMAÇÃO GLOBAL */
+* {
+    transition: all 0.3s ease;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeDown 1s ease;
+}
+
+header img {
+    width: 200px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+/* SECTIONS */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeUp 1s ease;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ARTESANATO */
+.banner {
+    background: rgba(210, 156, 75, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+/* IMPORTÂNCIA */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: rgba(213, 172, 77, 0.95);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* PRODUTOS */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.produto {
+    background: rgba(211, 153, 71, 0.95);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.preco {
+    background: #8b5e3c;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* SOBRE */
+.sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre img {
+    width: 500px;
+    border-radius: 15px;
+}
+
+/* CONTATO */
+.contato a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.instagram {
+    background: #E1306C;
+}
+
+.contato a:hover {
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+footer {
+    background: #4b2e2e;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <img src="img.logo.modificado.png" alt="Logo Studio Eli">
+    <h1>Studio Eli</h1>
+    <p>Arte do Artesanato</p>
+</header>
+
+<section class="banner">
+    <div class="container">
+        <h2>Artesanato Parintinense</h2>
+        <p>
+        O artesanato em Parintins é uma expressão viva da cultura amazônica, carregando história, tradição e identidade em cada peça produzida. Feito à mão por artesãos locais, ele utiliza materiais naturais da região, como sementes, fibras e madeira, transformando-os em verdadeiras obras de arte. Além de preservar saberes ancestrais, o artesanato também fortalece a economia local e valoriza o trabalho das comunidades, especialmente durante o Festival Folclórico de Parintins, onde a criatividade e a cultura ganham ainda mais destaque.
+
+Para quem deseja conhecer e adquirir essas peças únicas, o Studio Eli é um site dedicado à venda de artesanatos amazônicos, reunindo produtos autênticos, feitos com cuidado e tradição. A proposta é conectar você à essência da Amazônia, levando até sua casa a beleza, a cultura e a originalidade do artesanato de Parintins.
+
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>A Importância do Artesanato</h2>
+
+        <div class="cards">
+            <div class="card">
+                <img src="1.png">
+                <h3>Valorização Cultural</h3>
+                <p>A valorização da cultura é essencial para preservar a identidade e a história de um povo, fortalecendo suas tradições e costumes ao longo do tempo. Em regiões como Parintins, essa valorização se reflete em manifestações únicas como o Festival Folclórico de Parintins, que mantém vivas as raízes locais. Ao reconhecer e apoiar a cultura, promove-se o respeito à diversidade e o desenvolvimento social e econômico das comunidades.
+</p>
+            </div>
+
+            <div class="card">
+                <img src="19.png">
+                <h3>Economia Local</h3>
+                <p>A economia de Parintins é fortemente impulsionada pela cultura, pelo turismo e pelas atividades tradicionais da região. O grande destaque é o Festival Folclórico de Parintins, que movimenta o comércio, gera empregos e atrai visitantes de todo o país. Além disso, o artesanato, a pesca e o comércio local desempenham papéis importantes, contribuindo para a renda das famílias e valorizando os recursos e saberes da Amazônia.
+</p>
+            </div>
+
+            <div class="card">
+                <img src="20.png">
+                <h3>Sustentabilidade</h3>
+                <p>A sustentabilidade é essencial para garantir o equilíbrio entre o desenvolvimento humano e a preservação do meio ambiente. Ela busca utilizar os recursos naturais de forma consciente, evitando desperdícios e protegendo a natureza para as futuras gerações. Em regiões como Amazônia, sua importância é ainda maior, pois a preservação impacta diretamente o clima, a biodiversidade e a qualidade de vida das pessoas.
+</p>
+            </div>
+
+            <div class="card">
+                <img src="img.arte.png">
+                <h3>Arte Única</h3>
+                <p>A arte em Parintins é muito mais do que expressão cultural, ela é identidade, história e orgulho de um povo. Presente principalmente no Festival Folclórico de Parintins, a arte transforma tradições em espetáculos grandiosos, valorizando talentos locais e mantendo vivas as raízes amazônicas. Além disso, ela movimenta a economia e inspira novas gerações a preservarem sua cultura.
+</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Nossos Produtos</h2>
+
+        <div class="produtos">
+
+            <div class="produto">
+                <img src="5.png">
+                <h3>Cesta Artesanal (unidade)</h3>
+                <div class="preco">R$ 30,00</div>
+            </div>
+
+            <div class="produto">
+                <img src="9.png">
+                <h3>Roupas  do Garantido feitas de Crochê (unidade)</h3>
+                <div class="preco">R$ 50,00</div>
+        </div> 
+           <div class="produto">
+                <img src="22.png">
+                <h3>Roupas do Caprichoso feitas de Crochê (unidade)</h3>
+                <div class="preco">R$ 50,00</div>
+            </div>
+            <div class="produto">
+                <img src="6.png">
+                <h3>Cestas pequenas de Cipo (unidade)
+                </h3>
+                <div class="preco">R$ 15,00</div>
+            </div>
+            <div class="produto">
+                <img src="2.png">
+                <h3>Bolsa Artesanal (unidade)</h3>
+                <div class="preco">R$ 50,00</div>
+            </div>
+            
+            <div class="produto">
+                <img src="27.png">
+                <h3>Brincos Pequenos de Missanga ( 2 unidade)</h3>
+                <div class="preco">R$ 15,00</div>
+            </div>
+
+            <!-- NOVOS PRODUTOS -->
+            <div class="produto">
+                <img src="15.png">
+                <h3>Brincos de Missangas ( 2 unidade)</h3>
+                <div class="preco">R$ 20,00</div>
+            </div>
+            
+            <div class="produto">
+                <img src="14.png">
+                <h3>Brincos do Caprichoso ( 2 Brincos)</h3>
+                <div class="preco">R$ 15,00</div>
+            </div>
+
+            <div class="produto">
+                <img src="11.png">
+                <h3>Roupa do Garantido com penas pretas (unidade)</h3>
+                <div class="preco">R$ 30,00</div>
+            </div>
+
+            <div class="produto">
+                <img src="26.png">
+                <h3>Cinto de Macrame (unidade)</h3>
+                <div class="preco">R$ 50,00</div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container sobre">
+        <div>
+            <h2>Sobre a Artesã</h2>
+            <p>
+            Olá! Eu me chamo Elizangela Rodrigues Gomes tenho 48 anos natural de Nhamundá,Sou artesã a mais de 20 anos 
+Trabalho com variedade de artesanato como, croché, cestarias ,biologia com sementes da região ,cintos em macrame.
+Morar em parintins só enriqueceu  o meu aprendizado, tenho vários cursos na área. As instituições que me deram oportunidades, Cetan, Acssus, e associações dos bairros na qual só tenho a agradecer, Sou Nhamundaense mas apaixonada por Parintins, pelas oportunidades que aqui encontrei.
+coloco em cada peça um pedacinho da nossa cultura, história e tradição. Meu trabalho é feito com carinho, dedicação e inspiração nas cores e na magia do Festival Folclórico de Parintins.
+
+Te convido a conhecer meus produtos artesanais e se encantar com cada detalhe único, feito à mão. Venha valorizar o que é da nossa terra e levar consigo uma arte cheia de significado!
+
+            </p>
+        </div>
+
+        <img src="10.png">
+        <img src="7.png"
+        
+
+
+    </div>
+</section>
+
+<section class="contato">
+    <div class="container">
+        <h2>Entre em Contato</h2>
+
+        <a class="whatsapp" href="https://wa.me/+55 92 9355-2360" target="_blank">
+            WhatsApp
+        </a>
+
+        <a class="instagram" href="https://instagram.com/studioeli_oficial" target="_blank">
+            Instagram
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Studio Eli - Arte do Artesanato<p>
+               <h6>Parintins/AM</h6>
+</footer>
+
+</body>
+</html>
